@@ -1,12 +1,11 @@
 var React = require( 'react' );
+var GeneratedForm = require( 'react-form-generator' )({});
 
 module.exports = React.createClass( {
 
     render: function() {
         return (
-            <p>
-                How doodly do - I'm a react component
-            </p>
+            <GeneratedForm meta={this.props.meta} />
         );
     }
 
