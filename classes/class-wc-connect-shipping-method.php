@@ -54,7 +54,43 @@ if ( ! class_exists( 'WC_Connect_Shipping_Method' ) ) {
 			wp_register_script( 'wc_connect_shipping_admin', plugins_url( 'build/bundle.js', dirname( __FILE__ ) ), array() );
 
 			$admin_array = array(
-				'foo' => 'bar'
+				'foo'  => 'bar',
+				'usps' => array(
+					'fields' => array(
+						'field1' => array(
+							'renderer'     => 'text',
+							'defaultValue' => 'test read-only value',
+							'isReadOnly'   => true
+						),
+						'field2' => array(
+							'renderer' => true
+						)
+					),
+					'layout' => array(
+						'grid' => array(
+							'css' => 'container demo-form',
+							'rows' => array(
+								array(
+									'css' => 'row',
+									'content' => array(
+										array(
+											'renderer' => 'default',
+											'rendererSpecific' => array(
+												'fieldID' => 'field1',
+												'label'   => 'Field 1',
+												'css'     => array(
+													'wrapper' => 'row',
+													'label'   => 'col-xs-2 col-sm-2 col-md-2',
+													'field'   => 'col-xs-10 col-sm-10 col-md-10'
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				)
 			);
 
 			wp_localize_script( 'wc_connect_shipping_admin', 'wcConnectData', $admin_array );
