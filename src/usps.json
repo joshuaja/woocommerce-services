@@ -12,6 +12,9 @@
     },
     "woocommerce_usps_title": {
       "renderer": "text"
+    },
+    "woocommerce_usps_origin": {
+      "renderer": "text"
     }
   },
   "layout": {
@@ -60,6 +63,30 @@
                 "renderer": "default",
                 "rendererSpecific": {
                   "fieldID": "woocommerce_usps_title",
+                  "label": ""
+                }
+              } ]
+            }
+          ]
+        },
+        {
+          "css": "row",
+          "cells": [
+            {
+              "css": "",
+              "content": [ {
+                "renderer": "label",
+                "rendererSpecific": {
+                  "text": "Origin Postcode"
+                }
+              } ]
+            },
+            {
+              "css": "",
+              "content": [ {
+                "renderer": "default",
+                "rendererSpecific": {
+                  "fieldID": "woocommerce_usps_origin",
                   "label": ""
                 }
               } ]
