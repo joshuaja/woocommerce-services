@@ -9,6 +9,9 @@
           "false": 0
         }
       }
+    },
+    "woocommerce_usps_title": {
+      "renderer": "text"
     }
   },
   "layout": {
@@ -34,6 +37,30 @@
                 "rendererSpecific": {
                   "fieldID": "woocommerce_usps_enabled",
                   "label": "Enable this shipping method"
+                }
+              } ]
+            }
+          ]
+        },
+        {
+          "css": "row",
+          "cells": [
+            {
+              "css": "",
+              "content": [ {
+                "renderer": "label",
+                "rendererSpecific": {
+                  "text": "Method Title"
+                }
+              } ]
+            },
+            {
+              "css": "",
+              "content": [ {
+                "renderer": "default",
+                "rendererSpecific": {
+                  "fieldID": "woocommerce_usps_title",
+                  "label": ""
                 }
               } ]
             }
