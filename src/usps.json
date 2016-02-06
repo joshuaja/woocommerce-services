@@ -1,0 +1,45 @@
+{
+  "fields": {
+    "woocommerce_usps_enabled": {
+      "renderer": "checkbox",
+      "defaultValue": 0,
+      "rendererSpecific": {
+        "truthMap": {
+          "true":  1,
+          "false": 0
+        }
+      }
+    }
+  },
+  "layout": {
+    "grid": {
+      "css": "form-table",
+      "rows": [
+        {
+          "css": "row",
+          "cells": [
+            {
+              "css": "",
+              "content": [ {
+                "renderer": "label",
+                "rendererSpecific": {
+                  "text": "Enable/Disable"
+                }
+              } ]
+            },
+            {
+              "css": "",
+              "content": [ {
+                "renderer": "default",
+                "rendererSpecific": {
+                  "fieldID": "woocommerce_usps_enabled",
+                  "label": "Enable this shipping method"
+                }
+              } ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

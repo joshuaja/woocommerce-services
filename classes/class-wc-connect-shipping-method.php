@@ -53,7 +53,7 @@ if ( ! class_exists( 'WC_Connect_Shipping_Method' ) ) {
 
 			wp_register_script( 'wc_connect_shipping_admin', plugins_url( 'build/bundle.js', dirname( __FILE__ ) ), array() );
 
-			$form = json_decode( file_get_contents( dirname( __FILE__ ) . '/../assets/js/src/meta.json' ) );
+			$form = json_decode( file_get_contents( dirname( __FILE__ ) . '/../src/usps.json' ) );
 
 			$admin_array = array(
 				'foo'  => 'bar',
