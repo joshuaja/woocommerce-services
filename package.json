@@ -21,6 +21,8 @@
     "babel-polyfill": "6.3.14",
     "babel-runtime": "6.3.19",
     "react": "0.14.7",
-    "react-dom": "0.14.7"
+    "react-dom": "0.14.7",
+    "tcomb-form": "^0.8.1",
+    "tcomb-json-schema": "^0.2.4"
   }
 }
