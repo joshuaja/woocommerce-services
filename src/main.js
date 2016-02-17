@@ -1,6 +1,6 @@
 var React = require( 'react' );
 var ReactDOM = require( 'react-dom' );
-var Settings = require( './views/settings' );
+import Settings from './views/settings';
 
 document.addEventListener( "DOMContentLoaded", function( event ) {
     ReactDOM.render(
