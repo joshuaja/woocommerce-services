@@ -36,9 +36,11 @@ if ( ! class_exists( 'WC_Connect_Shipping_Method' ) ) {
 			$hide_save_button = true;
 
 			?>
+			</form>
 				<div id="wc-connect-admin-container">
 					React goes here
 				</div>
+			<form>
 			<?php
 		}
 
@@ -50,6 +52,8 @@ if ( ! class_exists( 'WC_Connect_Shipping_Method' ) ) {
 			if ( ! isset( $_GET['section'] ) || 'wc_connect_shipping_method' !== $_GET['section'] ) {
 				return;
 			}
+
+			wp_enqueue_style( 'wc_connect_shipping_admin', plugins_url( 'build/bundle.css', dirname( __FILE__ ) ) );
 
 			wp_register_script( 'wc_connect_shipping_admin', plugins_url( 'build/bundle.js', dirname( __FILE__ ) ), array() );
 
