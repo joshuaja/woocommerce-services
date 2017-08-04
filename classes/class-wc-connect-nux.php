@@ -524,7 +524,7 @@ if ( ! class_exists( 'WC_Connect_Nux' ) ) {
 							) ),
 							esc_html( $content['button_text'] ),
 							'https://woocommerce.com/terms-conditions/',
-							'https://woocommerce.com/terms-conditions/services-privacy/'
+							'https://jetpack.com/support/what-data-does-jetpack-sync/'
 						); ?></p>
 					<?php endif; ?>
 					<?php if ( isset( $content['button_link'] ) ) : ?>
@@ -591,7 +591,7 @@ if ( ! class_exists( 'WC_Connect_Nux' ) ) {
 			$connect_url = Jetpack::init()->build_connect_url(
 				true,
 				$redirect_url,
-				'woocommerce-services'
+				'woocommerce-services-auto-authorize'
 			);
 
 			// Make sure we always display the after-connection banner
